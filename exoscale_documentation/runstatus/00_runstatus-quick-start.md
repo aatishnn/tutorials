@@ -5,10 +5,10 @@ meta_desc: "Runstatus is a simple hosted status-page that lets you communicate y
 tags: "runstatus,quick-start"
 ---
 
-Runstatus is a hosted status page that lets you communicate:
+Runstatus is a hosted status page that lets you communicate your application's:
 
- * your applications's current status
- * details of planned maintenance.
+ * current status
+ * planned maintenance.
  
 In this quick-start, you'll learn how to:
 
@@ -32,14 +32,14 @@ Once you're logged in, click the *Runstatus* icon in the left-hand menu and then
 
  * cannot change once you click *Create*
  * will form the sub-domain for your status page
- * must follow standard domain name rules: only letter, numbers and dashes are allowed and it must start with a letter or a number.
+ * must follow standard domain name rules: only letters, numbers and dashes are allowed and it must start with a letter or a number.
 	
 ### General settings
 
 Next you can specify the basic settings for your status page, including:
 
  * timezone: start typing in the format Continent/City: e.g. Europe/Zurich
- * the Twitter account where you want your Runstatus to post your system status updates
+ * the Twitter account where you want Runstatus to post your system status updates
  * a human-friendly name to display on your status page.
  
 ### Describing your services
@@ -48,11 +48,13 @@ Every application has distinct components whose availability can affect user exp
 
 Under the *Services* tab you can specify those components. What you specify here should be a reflection of how your application's users experience your service rather than a detailed listing of your system architecture.
 
+![Describing your service components](../img/runstatus/runstatus-add-services.png)
+
 For example, if you have two redundant database clusters then losing one of those clusters might not take your application offline but it could reduce performance. Rather than listing each database cluster individually you might help your users more by listing a single "Database" component.
 
-Even more useful would be to think in terms of what the users would lose in the event of an incident. Rather than "Database" you might list the services that the database supports: fofr example, "User profiles and account login", "Widget directory", "User to user messaging".
+Even more useful would be to think in terms of what the users would lose in the event of an incident. Rather than "Database" you might list the services that the database supports: for example, "User profiles and account login", "Widget directory", "User to user messaging".
 
-You can edit, add to or delete these components at any time.
+You can add to, edit or delete these components at any time.
 
 ### Branding
 
@@ -66,9 +68,11 @@ To brand your page, you can specify:
 
 When you have no open incidents Runstatus will display your chosen default status message and a green tick for each component you've specified.
 
-When there is an ongoing incident Runstatus will show the most recent status update and a yellow (partial outage) or red (major outage) icon beside each affected component. Your users can then click through for the full event timeline.
+When there is an ongoing incident Runstatus will show the most recent status update and a yellow (partial outage) or red (major outage) icon beside each affected component. Your users can then click-through for the full event timeline.
 
-When you have maintenance scheduled, Runstatus lists the date and description with a link to more detail.
+When you have maintenance scheduled, Runstatus lists its date and description with a link to more detail.
+
+![A status page with scheduled maintenance](../img/runstatus/runstatus-status-page.png)
  
 ## Posting an update using the web interface
 
@@ -100,6 +104,8 @@ Once you've clicked the *Post new incident* button, Runstatus will:
 As the incident evolves, you should post new events to your incident timeline.
 
 Runstatus adds each of these updates to the incident timeline on your public status page and also posts them to your linked Twitter account.
+
+![A status tweet posted by Runstatus](../img/runstatus/runstatus-posting-to-twitter.png)
 
 To mark an incident as fixed, post a new event with a status of *Operational*.
 
