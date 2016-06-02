@@ -18,8 +18,8 @@ In this quick-start, you'll learn how to:
  * use the web interface to:
 	* post a service status update
 	* schedule and announce a maintenance window
- * use finger to query the status of an application from your terminal.
- * use a custom domain
+ * use finger to query the status of an application from your terminal
+ * use a custom domain.
 
 We'll describe how to use the Runstatus API in the next iteration of this guide.
 
@@ -41,8 +41,8 @@ Next you can specify the basic settings for your status page, including:
 
  * timezone: start typing in the format Continent/City: e.g. Europe/Zurich
  * the Twitter account where you want Runstatus to post your system status updates
- * a human-friendly name to display on your status page.
- * a custom domain to be able to use your own domain
+ * a human-friendly name to display on your status page
+ * a custom domain to be able to use your own domain.
  
 ### Describing your services
 
@@ -161,6 +161,6 @@ publish a new guide specifically about using that API.
 ## Enabling a custom domain
 
 To use your own domain instead of `NAME.runstat.us` you can simply enter the
-domain in the `General Settings` of you status page. Additionally your DNS
-server needs to be configured to point you status domain to `NAME.runstat.us`
+domain in the `General Settings` of your status page. Additionally your DNS
+server needs to be configured to point your status domain to `NAME.runstat.us`
 as CNAME entry.
