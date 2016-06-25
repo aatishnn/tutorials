@@ -1,6 +1,7 @@
 ---
 title: "How to install Ghost blogging platform on Ubuntu"
 slug: "how-to-install-ghost-blogging-platform-on-ubuntu"
+category: Community
 date: 2016-06-25 15:28 +05:45
 tags: "ghost, nodejs, blog"
 ---
